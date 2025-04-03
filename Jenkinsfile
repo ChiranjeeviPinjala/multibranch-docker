@@ -9,7 +9,7 @@ pipeline {
         }
         stage ("Tag") {
             steps {
-                sh 'docker tag image1 chiruthdev/paytm:bank'
+                sh 'docker tag image1 chiruthedev/paytm:bank'
             }
         }
         stage ("Push") {
@@ -23,7 +23,7 @@ pipeline {
         }
         stage ("Deploy") {
             steps {
-                sh 'docker run -itd --name bank-app -p 1111:80 chiruthdev/paytm:bank'
+                sh 'docker run -itd --name bank-app -p 1111:80 chiruthedev/paytm:bank'
             }
         }
     }
